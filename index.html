@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Induwara Wijesinghe — Mechanical Engineering / Mechatronics</title>
+    <meta name="description" content="Portfolio of Induwara Wijesinghe, Mechanical Engineering undergraduate specialising in Mechatronics at the University of Moratuwa.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">IW</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="hero-eyebrow">Mechanical Engineering · Mechatronics</p>
+                <h1>Induwara Wijesinghe</h1>
+                <p class="hero-tagline">
+                    Third-year Mechanical Engineering undergraduate at the University of Moratuwa,
+                    building robots that sense, decide and move — from vision-guided manipulators
+                    to autonomous underwater vehicles.
+                </p>
+                <div class="hero-actions">
+                    <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+                </div>
+                <ul class="hero-meta">
+                    <li>📍 Gampaha, Sri Lanka</li>
+                    <li>🎓 University of Moratuwa</li>
+                    <li>📧 <a href="mailto:induwarawijesinghe369@gmail.com">induwarawijesinghe369@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-placeholder">
+                    <span>IW</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Mechanical / Mechatronics</h3>
+                    <p>Mechanical design · CAD modelling · Kinematics · Robotics · System modelling · Engineering problem solving</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Simulation & Software</h3>
+                    <p>SolidWorks · AutoCAD · MATLAB · Simulink · Simscape Multibody · COMSOL · MSC Adams · Ansys</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming & Vision</h3>
+                    <p>Python · C++ · OpenCV · YOLO · MATLAB · Image processing · Computer vision</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Embedded & Hardware</h3>
+                    <p>Raspberry Pi · ESP32 · Arduino · Sensors · Stepper motors · Servo motors · BLDC · ESCs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="section section-alt" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-lede">A snapshot of the engineering work I've built. Full list on the <a href="projects.html">Projects page →</a></p>
+
+            <div class="featured-grid">
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="images/cartesian-thumb.jpg" alt="Vision-guided Cartesian robot" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🤖</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Vision-Guided Cartesian Robot</h3>
+                        <p class="project-sub">Raspberry Pi · YOLOv8 · Arduino · A4988</p>
+                        <p>A 3-axis Cartesian pick-and-place robot that detects and classifies coloured shapes with a custom YOLOv8 model, computes their workspace coordinates, and autonomously picks and places them. Includes a web-based control interface.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/induwarawijesinghe369-bit/vision-guided-cartesian-robot" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="images/bicycle-thumb.jpg" alt="Smart bicycle instrumentation" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🚲</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Smart Bicycle Instrumentation</h3>
+                        <p class="project-sub">Dual ESP32 · MAX30102 · MPU6050 · NEO-6M</p>
+                        <p>An ESP32-based instrumentation system for a bicycle — heart rate, IMU, GPS and custom wheel-speed sensing streamed to Firebase, with a live LVGL touchscreen on the bike and four web dashboards for analysis.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/induwarawijesinghe369-bit/smart-bicycle-instrumentation" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="images/auv-thumb.jpg" alt="SAUVC 2026 AUV" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🌊</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>SAUVC 2026 — AUV</h3>
+                        <p class="project-sub">MPU9250 · QMC5883L · Pressure sensor · Madgwick</p>
+                        <p>An untethered autonomous underwater vehicle for the Singapore AUV Challenge 2026. Video submission accepted and team shortlisted. My contribution: IMU, magnetometer and pressure sensor integration, plus a Madgwick-based sensor fusion pipeline.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/induwarawijesinghe369-bit/sauvc-2026-auv" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Highlights</h2>
+            <div class="achievements-grid">
+                <div class="achievement">
+                    <span class="achievement-icon">🏆</span>
+                    <h3>Dean's List</h3>
+                    <p>University of Moratuwa<br>Semesters 2, 3 &amp; 4</p>
+                </div>
+                <div class="achievement">
+                    <span class="achievement-icon">🎓</span>
+                    <h3>GPA 3.82 / 4.00</h3>
+                    <p>BSc (Hons) Mechanical Engineering</p>
+                </div>
+                <div class="achievement">
+                    <span class="achievement-icon">⚙️</span>
+                    <h3>IMechE Member</h3>
+                    <p>Student Affiliate<br>No. 80794909</p>
+                </div>
+                <div class="achievement">
+                    <span class="achievement-icon">🥋</span>
+                    <h3>1st Dan Black Belt</h3>
+                    <p>Karate-do · SLKF<br>2nd place national championship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-lede">
+                Open to internship opportunities in robotics, mechatronics, embedded systems and mechanical design.
+            </p>
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:induwarawijesinghe369@gmail.com">
+                    <span class="contact-icon">📧</span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">induwarawijesinghe369@gmail.com</span>
+                </a>
+                <a class="contact-card" href="https://www.linkedin.com/in/induwara-wijesinghe-44a319354" target="_blank">
+                    <span class="contact-icon">💼</span>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">induwara-wijesinghe</span>
+                </a>
+                <a class="contact-card" href="https://github.com/induwarawijesinghe369-bit" target="_blank">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">induwarawijesinghe369-bit</span>
+                </a>
+                <a class="contact-card" href="tel:+94718366465">
+                    <span class="contact-icon">📞</span>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+94 71 836 6465</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Induwara Wijesinghe · Built with plain HTML &amp; CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
