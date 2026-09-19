@@ -632,15 +632,14 @@ img { max-width: 100%; display: block; }
     }
 }
 
-/* Icon-only thumbnails (no photo yet) */
-.project-thumb--icon {
-    background: linear-gradient(135deg, var(--bg-alt) 0%, var(--border) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Project cards without a thumbnail — full-width body */
+.project-card--no-thumb .project-body,
+.project-list-item--no-thumb .project-body {
+    padding: 32px;
+    grid-column: 1 / -1;
 }
 
-.project-thumb--icon .project-thumb-fallback {
-    font-size: 4rem;
-    opacity: 0.9;
+.project-list-item--no-thumb {
+    grid-template-columns: 1fr;
 }
+
