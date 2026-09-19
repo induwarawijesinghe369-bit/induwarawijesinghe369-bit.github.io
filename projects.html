@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Induwara Wijesinghe</title>
+    <meta name="description" content="Engineering projects by Induwara Wijesinghe — robotics, mechatronics, embedded systems and manufacturing.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">IW</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============ HEADER ============ -->
+    <header class="page-header">
+        <div class="container">
+            <p class="hero-eyebrow">Portfolio</p>
+            <h1>Projects</h1>
+            <p class="hero-tagline">
+                Robotics, mechatronics, embedded systems and manufacturing work — from full
+                competition builds to hands-on fabrication. Where a project is on GitHub, the
+                repo link is provided. Where it isn't, a description and photo tell the story.
+            </p>
+        </div>
+    </header>
+
+    <!-- ============ FEATURED (on GitHub) ============ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Engineering Projects</h2>
+            <p class="section-lede">Robotics, instrumentation and competition work — all documented on GitHub.</p>
+
+            <div class="project-list">
+
+                <!-- ============= PROJECT 1 ============= -->
+                <article class="project-list-item">
+                    <div class="project-thumb">
+                        <img src="images/cartesian-thumb.jpg" alt="Vision-guided Cartesian robot" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🤖</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Robotics · Computer Vision</span>
+                        <h3>Vision-Guided Cartesian Pick-and-Place Robot</h3>
+                        <p class="project-sub">Raspberry Pi · YOLOv8 · OpenCV · Arduino · A4988 · React</p>
+                        <p>
+                            A 3-axis Cartesian gantry robot that detects, classifies and localises
+                            coloured shapes using a custom-trained YOLOv8 model, converts their pixel
+                            coordinates into workspace millimetres via a homography calibration, and
+                            autonomously picks and places them. NEMA 17 steppers are driven through
+                            A4988 drivers from an Arduino, with a Python control loop running on the
+                            Raspberry Pi. A web control interface was built using React, JavaScript,
+                            HTML and CSS. Critical mechanical parts — stepper motor holders, linear
+                            actuator holder — were designed in AutoCAD.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/induwarawijesinghe369-bit/vision-guided-cartesian-robot" target="_blank">GitHub repository →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ============= PROJECT 2 ============= -->
+                <article class="project-list-item">
+                    <div class="project-thumb">
+                        <img src="images/bicycle-thumb.jpg" alt="Smart bicycle instrumentation" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🚲</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Embedded · IoT · Signal Processing</span>
+                        <h3>Smart Bicycle Instrumentation System</h3>
+                        <p class="project-sub">Dual ESP32 · MAX30102 · MPU6050 · NEO-6M GPS · TCRT5000 · Firebase</p>
+                        <p>
+                            A sensor-based rider-monitoring and IoT system that captures heart rate
+                            (MAX30102), motion and orientation (MPU6050), GPS position (NEO-6M) and
+                            a custom-built reflective IR wheel-speed sensor, all streamed to Firebase
+                            from two ESP32 boards communicating over ESP-NOW. Sensor calibration and
+                            signal filtering — moving average, 1D Kalman, complementary filter and
+                            threshold peak detection — were implemented in C++ for reliable real-time
+                            readings. A 4" LVGL touchscreen on the bike shows live data; four web
+                            dashboards display history for health, motion, GPS and velocity.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/induwarawijesinghe369-bit/smart-bicycle-instrumentation" target="_blank">GitHub repository →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ============= PROJECT 3 ============= -->
+                <article class="project-list-item">
+                    <div class="project-thumb">
+                        <img src="images/auv-thumb.jpg" alt="SAUVC 2026 AUV" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🌊</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Competition · Underwater Robotics</span>
+                        <h3>SAUVC 2026 — Autonomous Underwater Vehicle</h3>
+                        <p class="project-sub">MPU9250 · QMC5883L · Pressure transducer · Madgwick · Team Diyakawa</p>
+                        <p>
+                            An untethered autonomous underwater vehicle built by Team Diyakawa for
+                            the Singapore AUV Challenge 2026. The qualifying video was accepted and
+                            the team was shortlisted for the competition. My contribution was sensor
+                            integration — the MPU9250 IMU, QMC5883L magnetometer and a pressure
+                            transducer for depth — including calibration routines for gyro bias,
+                            accelerometer offsets and magnetometer hard/soft-iron distortion, plus a
+                            full Madgwick AHRS implementation for roll, pitch and yaw estimation.
+                            Mechanical CAD is maintained in the team's shared repository.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/induwarawijesinghe369-bit/sauvc-2026-auv" target="_blank">GitHub repository →</a>
+                            <a href="https://github.com/diyakawaofficial/diyakawa_3.0/tree/main/Design" target="_blank">Team CAD →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MANUFACTURING ============ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Manufacturing &amp; Materials</h2>
+            <p class="section-lede">Hands-on fabrication, material analysis and reverse-engineering coursework.</p>
+
+            <div class="project-list">
+
+                <article class="project-list-item">
+                    <div class="project-thumb">
+                        <img src="images/holder-thumb.jpg" alt="Multi-purpose device holder" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🛠️</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Manufacturing Technology</span>
+                        <h3>Multi-Purpose Device Holder</h3>
+                        <p class="project-sub">Woodworking · Sheet metal · Welding · Metalworking</p>
+                        <p>
+                            A compact multi-purpose holder for laptop, tablet, phone and headset,
+                            fabricated from a combination of wood and metal components. Woodworking
+                            included cutting, planing, drilling, chiselling, sanding and
+                            mortise-and-tenon joint fabrication for the main frame. Metal components
+                            were produced using rod bending, sheet-metal bending, welding and spot
+                            welding to build adjustable holders. Hinges, U-shaped support rods, an
+                            aluminium L-bar and a wing-nut adjustment mechanism give the holder its
+                            adjustability. Final finishing included grinding, sanding, sealing and
+                            painting. Gained practical experience in process selection, workshop
+                            tools, material joining and fabrication methods.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-list-item">
+                    <div class="project-thumb">
+                        <img src="images/cooker-thumb.jpg" alt="Reverse engineering of an infrared cooker" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🔬</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Materials · Reverse Engineering</span>
+                        <h3>Reverse Engineering of an Infrared Cooker</h3>
+                        <p class="project-sub">Material characterisation · Sheet-metal forming · SolidWorks</p>
+                        <p>
+                            Comprehensive reverse engineering analysis of the metallic cover assembly
+                            of an infrared cooker, focusing on material identification, manufacturing
+                            process evaluation and design improvement. Material characterisation
+                            combined visual inspection, spark testing, density measurement, magnetic
+                            testing and Optical Emission Spectrometry (OES), identifying the material
+                            as low carbon steel (AISI 1006–1010). The deep-drawing process was
+                            analysed with respect to clearance, radii and structural integrity.
+                            Detailed 3D models and production drawings of the cover, punch and die
+                            assembly were produced in SolidWorks. Proposed improvements include
+                            reinforcement ribs for stiffness and thermal stability, and hemmed/rolled
+                            edges for safety and finish quality.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ONGOING (placeholder) ============ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Ongoing Projects</h2>
+            <p class="section-lede">Current work in progress — updated as these develop.</p>
+
+            <div class="project-list">
+
+                <article class="project-list-item project-list-item--placeholder">
+                    <div class="project-thumb">
+                        <span class="project-thumb-fallback">🚧</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">In progress</span>
+                        <h3>Coming soon</h3>
+                        <p class="project-sub">Placeholder</p>
+                        <p>
+                            Ongoing projects will be listed here as they reach a shareable stage.
+                            Check back shortly, or reach out via the contact details on the home page
+                            to hear what's currently in the works.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section-alt">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title" style="display: inline-block;">Want to work together?</h2>
+            <p class="section-lede" style="margin-left: auto; margin-right: auto;">
+                I'm open to internship opportunities in robotics, mechatronics, embedded systems and mechanical design.
+            </p>
+            <div class="hero-actions" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Induwara Wijesinghe · Built with plain HTML &amp; CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
