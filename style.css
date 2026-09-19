@@ -631,3 +631,16 @@ img { max-width: 100%; display: block; }
         padding: 26px;
     }
 }
+
+/* Icon-only thumbnails (no photo yet) */
+.project-thumb--icon {
+    background: linear-gradient(135deg, var(--bg-alt) 0%, var(--border) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-thumb--icon .project-thumb-fallback {
+    font-size: 4rem;
+    opacity: 0.9;
+}
