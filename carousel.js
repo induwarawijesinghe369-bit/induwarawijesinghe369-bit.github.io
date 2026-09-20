@@ -8,7 +8,7 @@
 (function () {
     'use strict';
 
-    var AUTOPLAY_MS = 3500;
+    var AUTOPLAY_MS = 2500;
 
     var stage = document.querySelector('.carousel-stage');
     if (!stage) return;
