@@ -841,18 +841,3 @@ img { max-width: 100%; display: block; }
     border-right: 1px solid var(--border);
 }
 
-/* =========================================================
-   FINAL OVERRIDES
-   ========================================================= */
-.project-list-item .project-thumb,
-.project-list-item .project-thumb--dual .thumb-half {
-    background: #f5f5f5;
-}
-
-.project-list-item .project-thumb img,
-.project-list-item .project-thumb--dual .thumb-half img {
-    object-fit: contain !important;
-    width: 530%;
-    height: 530%;
-    max-height: 530%;
-}
