@@ -310,7 +310,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* =========================
-   FEATURED PROJECTS
+   FEATURED PROJECTS (homepage grid)
    ========================= */
 .featured-grid {
     display: grid;
@@ -336,7 +336,7 @@ img { max-width: 100%; display: block; }
 
 .project-thumb {
     aspect-ratio: 16 / 9;
-    background: #f5f5f5;
+    background: var(--bg-alt);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,7 +347,7 @@ img { max-width: 100%; display: block; }
 .project-thumb img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     position: absolute;
     inset: 0;
 }
@@ -549,7 +549,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* =========================
-   PROJECT LIST (multi-item page)
+   PROJECT LIST (projects.html rows)
    ========================= */
 .project-list {
     display: flex;
@@ -560,7 +560,7 @@ img { max-width: 100%; display: block; }
 
 .project-list-item {
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 380px 1fr;
     gap: 0;
     align-items: stretch;
     background: var(--card);
@@ -568,6 +568,7 @@ img { max-width: 100%; display: block; }
     border-radius: var(--radius);
     overflow: hidden;
     transition: all 0.25s ease;
+    min-height: 340px;
 }
 
 .project-list-item:hover {
@@ -576,25 +577,22 @@ img { max-width: 100%; display: block; }
 }
 
 .project-list-item .project-thumb {
-    aspect-ratio: auto;
-    height: auto;
-    min-height: 260px;
-    max-height: 320px;
     position: relative;
     border-right: 1px solid var(--border);
-    background: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: var(--bg-alt);
     overflow: hidden;
+    aspect-ratio: auto;
+    min-height: 0;
+    max-height: none;
 }
 
 .project-list-item .project-thumb img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    position: relative;
-    inset: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-list-item .project-body {
@@ -625,17 +623,21 @@ img { max-width: 100%; display: block; }
         grid-template-columns: 1fr;
     }
     .project-list-item .project-thumb {
-        min-height: 220px;
-        max-height: 280px;
+        position: relative;
+        min-height: 240px;
         border-right: none;
         border-bottom: 1px solid var(--border);
+    }
+    .project-list-item .project-thumb img {
+        position: relative;
+        aspect-ratio: 16 / 10;
     }
     .project-list-item .project-body {
         padding: 26px;
     }
 }
 
-/* Project cards without a thumbnail — full-width body */
+/* Cards with no thumbnail — body spans full width */
 .project-card--no-thumb .project-body,
 .project-list-item--no-thumb .project-body {
     padding: 32px;
@@ -788,7 +790,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* =========================================================
-   DUAL-IMAGE THUMBNAIL
+   DUAL-IMAGE THUMBNAIL (used on robot arm card)
    ========================================================= */
 .project-thumb--dual {
     display: grid;
@@ -832,12 +834,21 @@ img { max-width: 100%; display: block; }
     z-index: 2;
 }
 
-/* In project-list context — stack the two halves vertically */
+/* Dual thumb inside a project list row — stack vertically, keep CAD renders whole */
 .project-list-item .project-thumb--dual {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    max-height: 420px;
-    min-height: 320px;
+    min-height: 340px;
+    max-height: none;
     border-right: 1px solid var(--border);
 }
 
+.project-list-item .project-thumb--dual .thumb-half {
+    background: #f5f5f5;
+}
+
+.project-list-item .project-thumb--dual .thumb-half img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
