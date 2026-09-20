@@ -184,26 +184,60 @@
         </div>
     </section>
 
-    <!-- ============ ONGOING (placeholder) ============ -->
+       <!-- ============ ONGOING PROJECTS ============ -->
     <section class="section reveal">
         <div class="container">
             <h2 class="section-title">Ongoing Projects</h2>
-            <p class="section-lede">Current work in progress — updated as these develop.</p>
+            <p class="section-lede">Current work in progress — CAD design or simulation stages, physical builds and further integration pending.</p>
 
             <div class="project-list reveal-stagger">
 
-                <article class="project-list-item project-list-item--placeholder">
+                <article class="project-list-item">
                     <div class="project-thumb">
-                        <span class="project-thumb-fallback">🚧</span>
+                        <img src="images/climber-cad.jpg" alt="Biped wall-climbing robot CAD" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🧗</span>
                     </div>
                     <div class="project-body">
-                        <span class="project-tag">In progress</span>
-                        <h3>Coming soon</h3>
-                        <p class="project-sub">Placeholder</p>
+                        <span class="project-tag">Ongoing · CAD Complete</span>
+                        <h3>Biped Wall-Climbing Robot</h3>
+                        <p class="project-sub">Mechatronic System Design · 5-DoF · Suction adhesion · DH kinematics</p>
                         <p>
-                            Ongoing projects will be listed here as they reach a shareable stage.
-                            Check back shortly, or reach out via the contact details on the home page
-                            to hear what's currently in the works.
+                            Design of a 5-DoF biped wall-climbing robot with suction-based adhesion
+                            for vertical wall inspection. The design uses a negative-pressure
+                            adhesion system and a two-legged inchworm gait for controlled vertical
+                            locomotion. A Denavit-Hartenberg kinematic model and inverse kinematics
+                            are being developed for 5-DoF joint control and suction-unit positioning.
+                            Planned sensor integration includes cameras, ToF sensors, encoders, IMU
+                            and pressure sensors for perception, feedback, orientation and adhesion
+                            monitoring.
+                        </p>
+                        <p class="project-status-note">
+                            Status: CAD design complete · Prototype build and control integration pending
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-list-item">
+                    <div class="project-thumb">
+                        <img src="images/arm-cad.jpg" alt="6-DoF robot arm simulation CAD" onerror="this.style.display='none'">
+                        <span class="project-thumb-fallback">🦾</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Ongoing · Simulation</span>
+                        <h3>6-DoF Robot Arm — Pick and Place Simulation</h3>
+                        <p class="project-sub">EN3563 Robotics · Gazebo · ROS2 · DH kinematics · Trajectory planning</p>
+                        <p>
+                            A pick-and-place task for a 6-DoF industrial robot arm in the Gazebo
+                            simulation environment. The work covers coordinate frame assignment,
+                            Denavit-Hartenberg parameter derivation, forward and inverse kinematics,
+                            and trajectory planning that maintains the object's upright orientation
+                            throughout the motion. A smooth trapezoidal velocity profile is used for
+                            controlled joint movement. I designed my own 6-DoF arm as a learning
+                            platform, then applied that experience to the YASKAWA GP7 model used for
+                            the actual simulation.
+                        </p>
+                        <p class="project-status-note">
+                            Status: Simulation in progress · Kinematics and trajectory planning underway
                         </p>
                     </div>
                 </article>
@@ -211,7 +245,6 @@
             </div>
         </div>
     </section>
-
     <!-- ============ CTA ============ -->
     <section class="section section-alt reveal">
         <div class="container" style="text-align: center;">
