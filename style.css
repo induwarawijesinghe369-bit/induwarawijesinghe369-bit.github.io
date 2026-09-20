@@ -852,7 +852,7 @@ img { max-width: 100%; display: block; }
 .project-list-item .project-thumb img,
 .project-list-item .project-thumb--dual .thumb-half img {
     object-fit: contain !important;
-    width: 130%;
-    height: 130%;
-    max-height: 130%;
+    width: 330%;
+    height: 330%;
+    max-height: 330%;
 }
