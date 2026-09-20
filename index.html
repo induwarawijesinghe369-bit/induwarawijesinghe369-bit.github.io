@@ -52,69 +52,51 @@
         </div>
     </header>
 
-        <!-- ============ IMAGE MARQUEE ============ -->
-    <section class="marquee">
-        <div class="marquee-label">Selected Work</div>
-        <div class="marquee-track">
-            <!-- First copy -->
-            <div class="marquee-item">
-                <img src="images/cartesian-thumb.jpg" alt="Cartesian robot">
-                <div class="marquee-item-caption">Cartesian Robot</div>
-            </div>
-            <div class="marquee-item">
-                <img src="images/auv-thumb.jpg" alt="SAUVC AUV">
-                <div class="marquee-item-caption">SAUVC 2026 AUV</div>
-            </div>
-            <div class="marquee-item">
-                <img src="images/climber-cad.jpg" alt="Biped wall-climber CAD">
-                <div class="marquee-item-caption">Biped Wall-Climber</div>
-            </div>
-            <div class="marquee-item">
-                <img src="images/arm-own-cad.jpg" alt="My 6-DoF arm design">
-                <div class="marquee-item-caption">6-DoF Arm — My Design</div>
-            </div>
-            <div class="marquee-item">
-                <img src="images/arm-cad.jpg" alt="YASAKAWA GP7 CAD">
-                <div class="marquee-item-caption">YASAKAWA GP7</div>
-            </div>
-            <div class="marquee-item">
-                <img src="images/holder-thumb.jpg" alt="Multi-purpose device holder">
-                <div class="marquee-item-caption">Multi-Purpose Holder</div>
-            </div>
-            <div class="marquee-item">
-                <img src="images/cooker-thumb.jpg" alt="Reverse engineering — infrared cooker">
-                <div class="marquee-item-caption">Reverse Engineering</div>
-            </div>
+           <!-- ============ CAROUSEL ============ -->
+    <section class="carousel">
+        <div class="carousel-label">Selected Work</div>
+        <div class="carousel-stage">
+            <button class="carousel-arrow prev" aria-label="Previous">←</button>
+            <button class="carousel-arrow next" aria-label="Next">→</button>
 
-            <!-- Second copy (for seamless loop) -->
-            <div class="marquee-item">
-                <img src="images/cartesian-thumb.jpg" alt="Cartesian robot">
-                <div class="marquee-item-caption">Cartesian Robot</div>
+            <div class="carousel-slide">
+                <img src="images/cartesian-thumb.jpg" alt="Vision-guided Cartesian robot">
+                <div class="carousel-slide-caption">Vision-Guided Cartesian Robot</div>
             </div>
-            <div class="marquee-item">
-                <img src="images/auv-thumb.jpg" alt="SAUVC AUV">
-                <div class="marquee-item-caption">SAUVC 2026 AUV</div>
+            <div class="carousel-slide">
+                <img src="images/auv-thumb.jpg" alt="SAUVC 2026 AUV">
+                <div class="carousel-slide-caption">SAUVC 2026 — Autonomous Underwater Vehicle</div>
             </div>
-            <div class="marquee-item">
-                <img src="images/climber-cad.jpg" alt="Biped wall-climber CAD">
-                <div class="marquee-item-caption">Biped Wall-Climber</div>
+            <div class="carousel-slide">
+                <img src="images/climber-cad.jpg" alt="Biped wall-climbing robot CAD">
+                <div class="carousel-slide-caption">Biped Wall-Climbing Robot</div>
             </div>
-            <div class="marquee-item">
-                <img src="images/arm-own-cad.jpg" alt="My 6-DoF arm design">
-                <div class="marquee-item-caption">6-DoF Arm — My Design</div>
+            <div class="carousel-slide">
+                <img src="images/arm-own-cad.jpg" alt="My own 6-DoF arm design">
+                <div class="carousel-slide-caption">6-DoF Arm — My Design</div>
             </div>
-            <div class="marquee-item">
+            <div class="carousel-slide">
                 <img src="images/arm-cad.jpg" alt="YASAKAWA GP7 CAD">
-                <div class="marquee-item-caption">YASAKAWA GP7</div>
+                <div class="carousel-slide-caption">YASAKAWA GP7</div>
             </div>
-            <div class="marquee-item">
+            <div class="carousel-slide">
                 <img src="images/holder-thumb.jpg" alt="Multi-purpose device holder">
-                <div class="marquee-item-caption">Multi-Purpose Holder</div>
+                <div class="carousel-slide-caption">Multi-Purpose Device Holder</div>
             </div>
-            <div class="marquee-item">
-                <img src="images/cooker-thumb.jpg" alt="Reverse engineering — infrared cooker">
-                <div class="marquee-item-caption">Reverse Engineering</div>
+            <div class="carousel-slide">
+                <img src="images/cooker-thumb.jpg" alt="Reverse engineering of an infrared cooker">
+                <div class="carousel-slide-caption">Reverse Engineering — Infrared Cooker</div>
             </div>
+        </div>
+
+        <div class="carousel-dots">
+            <button class="carousel-dot" aria-label="Go to slide 1"></button>
+            <button class="carousel-dot" aria-label="Go to slide 2"></button>
+            <button class="carousel-dot" aria-label="Go to slide 3"></button>
+            <button class="carousel-dot" aria-label="Go to slide 4"></button>
+            <button class="carousel-dot" aria-label="Go to slide 5"></button>
+            <button class="carousel-dot" aria-label="Go to slide 6"></button>
+            <button class="carousel-dot" aria-label="Go to slide 7"></button>
         </div>
     </section>
 
@@ -265,6 +247,6 @@
     </footer>
 
     <script src="script.js"></script>
-
+    <script src="carousel.js"></script>
 </body>
 </html>
