@@ -852,3 +852,10 @@ img { max-width: 100%; display: block; }
     width: 100%;
     height: 100%;
 }
+
+/* Hide emoji fallbacks whenever a real image is inside the same container */
+.project-thumb:has(img) .project-thumb-fallback,
+.project-thumb--dual:has(img) .project-thumb-fallback {
+    display: none !important;
+}
+
